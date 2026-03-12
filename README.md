@@ -13,8 +13,8 @@ No existing platform owned this workflow for battle royale games (COD Mobile, PU
 - **Multi-tenant architecture** — orgs with Owner → Admin → Manager → Member RBAC, resource isolation, and per-plan limits enforced at the API layer
 - **Registration engine** — draft/submit/approve workflow with waitlists, slot management, Discord OAuth verification, blacklisting, and withdrawals
 - **Billing system** — Paddle integration with tiered subscriptions, free trials, credit-based AI usage, webhook processing, and a full billing portal
-- **AI score extraction** — Vision AI (Qwen VL) parses game screenshots; finds all teams and kills in a match in 1-2 minutes instead of manual entry over hours
-- **Configurable scoring** — per-tournament scoring rules, kill/placement multipliers, player-level metrics, manual adjustments, and CSV export
+- **AI score extraction** — Vision AI (Qwen VL) parses game screenshots; extracts all team and/or player metrics in 1-2 minutes instead of manual entry over hours
+- **Configurable scoring** — per-tournament scoring rules, configurable metric multipliers, player-level metrics, manual adjustments, and CSV export
 - **Production ops** — self-hosted VPS with Traefik reverse proxy, zero-downtime deploys, hourly Cloudflare R2 backups, and Sentry error monitoring
 - **Test coverage** — 1,783 backend tests (Pytest) + 126 client tests (Vitest) covering registration flows, scoring logic, billing, and permissions
 
@@ -96,7 +96,7 @@ Tournament directors can preview individual leaderboards from the admin panel. T
 
 ### Score Entry — Per-Team and Per-Player
 
-The score entry modal shows all registered teams in a 3-column grid. Each team can be expanded to enter per-player kill counts alongside team-level kills and placement.
+The score entry modal shows all registered teams in a 3-column grid. Each team can be expanded to enter individual player metrics alongside team-level metrics.
 
 ![Enter Scores Modal](tourny-admin-enter-scores-modal.png)
 
@@ -104,7 +104,7 @@ The score entry modal shows all registered teams in a 3-column grid. Each team c
 
 ### AI Score Extraction
 
-The standout feature: organizers upload match screenshots and Scrimly's AI (Qwen VL) extracts placement and kill data for every team automatically.
+The standout feature: organizers upload match screenshots and Scrimly's AI (Qwen VL) extracts all team metrics automatically.
 
 **Step 1 — Upload game screenshots (up to 8 files)**
 
