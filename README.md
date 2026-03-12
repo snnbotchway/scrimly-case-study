@@ -62,11 +62,15 @@ Organizers configure tournaments through a 6-step wizard. Title, slug, game type
 
 ---
 
-### Tournament Edit Wizard — Schedule
+### Tournament Edit Wizard — Requirements
 
-Step 2 configures registration window, tournament dates, and an optional check-in window with toggle.
+Step 4 lets organizers define exactly what information players and teams must provide at registration. Fields are configurable per-tournament, with support for custom fields.
 
-![Edit Schedule](edit-tourny-schedule.png)
+![Edit Requirements — Player & Team Fields](edit-tourny-requirements1.png)
+
+Account requirements, Discord server membership, team allowlists, granular auto-approval toggles, and mid-tournament change controls — all configurable per-tournament.
+
+![Edit Requirements — Access Controls & Auto-Approval](edit-tourny-requirements2.png)
 
 ---
 
