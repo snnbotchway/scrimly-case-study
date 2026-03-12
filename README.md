@@ -82,15 +82,15 @@ Tournament directors configure multiple leaderboards per tournament — team sta
 
 The public-facing tournament page shows tournament info, schedule, registration requirements, and embedded leaderboard with full standings.
 
-![Public Tournament Page](tourny-admin-team-leaderboard-preview.png)
+![Public Tournament Page](tourny-public-leaderboard.png)
 
 ---
 
 ### Admin Leaderboard Preview
 
-Tournament admins can preview individual leaderboards from the admin panel before they go live. The preview modal shows the full standings with Refresh and Download options.
+Tournament directors can preview individual leaderboards from the admin panel. The preview modal shows full standings with Refresh and Download options.
 
-![Admin Leaderboard Preview Modal](tourny-public-leaderboard.png)
+![Admin Leaderboard Preview Modal](tourny-admin-team-leaderboard-preview.png)
 
 ---
 
