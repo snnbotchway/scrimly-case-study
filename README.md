@@ -80,11 +80,17 @@ Tournament directors configure multiple leaderboards per tournament — team sta
 
 ### Public Tournament Page with Live Standings
 
-The public-facing tournament page shows info, schedule, registration requirements, and embedded leaderboard. Visitors can view standings in a modal with Refresh and Download.
+The public-facing tournament page shows tournament info, schedule, registration requirements, and embedded leaderboard with full standings.
 
-![Public Leaderboard Preview](tourny-admin-team-leaderboard-preview.png)
+![Public Tournament Page](tourny-admin-team-leaderboard-preview.png)
 
-![Public Leaderboard Modal](tourny-public-leaderboard.png)
+---
+
+### Admin Leaderboard Preview
+
+Tournament admins can preview individual leaderboards from the admin panel before they go live. The preview modal shows the full standings with Refresh and Download options.
+
+![Admin Leaderboard Preview Modal](tourny-public-leaderboard.png)
 
 ---
 
@@ -116,17 +122,17 @@ The standout feature: organizers upload match screenshots and Scrimly's AI (Qwen
 
 ## Tech Stack
 
-| Layer | Technologies |
-|---|---|
-| **Backend** | Python 3.13, Django 5.2, Django REST Framework |
-| **Frontend** | React 19, TypeScript, TanStack Router/Query, Tailwind CSS, shadcn/ui |
-| **Database** | PostgreSQL (soft deletes, row-level constraints, optimized indexes) |
-| **Cache / Queue** | Redis + Celery (async tasks, AI job processing, rate limiting) |
-| **Auth** | Supabase JWT with JWKS validation (Discord OAuth for player verification) |
-| **Billing** | Paddle (subscriptions, webhooks, credit system) |
-| **AI** | Qwen VL via Alibaba Cloud (vision model for screenshot parsing) |
-| **Infra** | Docker Compose, Traefik, self-hosted VPS, Cloudflare R2, Sentry |
-| **Testing** | Pytest (1,783 tests), Vitest (126 tests), factory_boy, coverage reporting |
+| Layer             | Technologies                                                              |
+| ----------------- | ------------------------------------------------------------------------- |
+| **Backend**       | Python 3.13, Django 5.2, Django REST Framework                            |
+| **Frontend**      | React 19, TypeScript, TanStack Router/Query, Tailwind CSS, shadcn/ui      |
+| **Database**      | PostgreSQL (soft deletes, row-level constraints, optimized indexes)       |
+| **Cache / Queue** | Redis + Celery (async tasks, AI job processing, rate limiting)            |
+| **Auth**          | Supabase JWT with JWKS validation (Discord OAuth for player verification) |
+| **Billing**       | Paddle (subscriptions, webhooks, credit system)                           |
+| **AI**            | Qwen VL via Alibaba Cloud (vision model for screenshot parsing)           |
+| **Infra**         | Docker Compose, Traefik, self-hosted VPS, Cloudflare R2, Sentry           |
+| **Testing**       | Pytest (1,783 tests), Vitest (126 tests), factory_boy, coverage reporting |
 
 ---
 
